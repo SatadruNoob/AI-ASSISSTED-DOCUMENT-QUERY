@@ -4,20 +4,41 @@
 
 This repository contains a Document RAG (Retrieval-Augmented Generation) Pipeline application built with Streamlit, LangChain, and Mistral AI. Users can upload PDF documents, process them with OCR, and query their content using natural language. The system uses ChromaDB for vector storage and a relational database (PostgreSQL or SQLite) for document/query metadata. The app is designed for containerized environments and supports both custom and HuggingFace embeddings.
 
-<h3>GITHUB CODESPACE TERMINAL</h3>
-<img src="https://github.com/user-attachments/assets/dd828950-86bf-4bae-b505-4fd8fcbeb2ba" width="400" alt="GITHUB CODESPACE TERMINAL"/>
+<h3>🖥️ GitHub Codespace Terminal</h3>
+<img src="https://github.com/user-attachments/assets/dd828950-86bf-4bae-b505-4fd8fcbeb2ba" width="400" alt="GitHub Codespace Terminal"/>
+<ul>
+  <li>Fully cloud-based development environment</li>
+  <li>Instant terminal access without local setup</li>
+  <li>Great for remote coding and collaboration</li>
+</ul>
 <br>
 
-<h3>RAG Pipeline showing generated responses</h3>
-<img src="https://github.com/user-attachments/assets/57a30438-c10d-4c85-adb2-caba8f77d67e" width="400" alt="RAG Pipeline showing generated responses"/>
+<h3>🧠 RAG Pipeline Showing Generated Responses</h3>
+<img src="https://github.com/user-attachments/assets/57a30438-c10d-4c85-adb2-caba8f77d67e" width="400" alt="RAG Pipeline Showing Generated Responses"/>
+<ul>
+  <li>Displays AI-generated answers based on retrieved data</li>
+  <li>Combines retrieval with generation for better accuracy</li>
+  <li>Useful for customer support bots, search assistants, etc.</li>
+</ul>
 <br>
 
-<h3>RAG Pipeline showing chunksdata used to generate responses</h3>
-<img src="https://github.com/user-attachments/assets/537a0604-9406-4914-a1c2-d6c507292250" width="400" alt="RAG Pipeline showing chunksdata used to generate responses"/>
+<h3>📄 RAG Pipeline Showing Chunks Data Used To Generate Responses</h3>
+<img src="https://github.com/user-attachments/assets/537a0604-9406-4914-a1c2-d6c507292250" width="400" alt="RAG Pipeline Showing Chunks Data Used To Generate Responses"/>
+<ul>
+  <li>Chunks split from documents using text splitting techniques</li>
+  <li>Each chunk passed to the LLM for generating answers</li>
+  <li>Improves contextual accuracy and source traceability</li>
+</ul>
 <br>
 
-<h3>RAG Pipeline showing uploaded docs used to create response</h3>
-<img src="https://github.com/user-attachments/assets/57d6f539-c3f1-4ad6-a656-91b9f8d61e25" width="400" alt="RAG Pipeline showing uploaded docs used to create response"/>
+<h3>📚 RAG Pipeline Showing Uploaded Docs Used To Create Response</h3>
+<img src="https://github.com/user-attachments/assets/57d6f539-c3f1-4ad6-a656-91b9f8d61e25" width="400" alt="RAG Pipeline Showing Uploaded Docs Used To Create Response"/>
+<ul>
+  <li>Shows original uploaded documents as sources</li>
+  <li>PDF, DOCX, or TXT formats used as input data</li>
+  <li>Forms the basis of the vector store for retrieval</li>
+</ul>
+
 
 
 ## 2. System Architecture
