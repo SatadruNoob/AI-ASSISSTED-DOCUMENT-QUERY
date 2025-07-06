@@ -4,13 +4,16 @@
 
 This repository contains a Document RAG (Retrieval-Augmented Generation) Pipeline application built with Streamlit, LangChain, and Mistral AI. Users can upload PDF documents, process them with OCR, and query their content using natural language. The system uses ChromaDB for vector storage and a relational database (PostgreSQL or SQLite) for document/query metadata. The app is designed for containerized environments and supports both custom and HuggingFace embeddings.
 
+<img src="https://github.com/user-attachments/assets/dd828950-86bf-4bae-b505-4fd8fcbeb2ba" width="400" alt="GITHUB CODESPACE TERMINAL"/>
+<br>
 
-![GITHUB CODESPACE TERMINAL](https://github.com/user-attachments/assets/dd828950-86bf-4bae-b505-4fd8fcbeb2ba)
-![RAG Pipeline showing generated responses](https://github.com/user-attachments/assets/57a30438-c10d-4c85-adb2-caba8f77d67e)
+<img src="https://github.com/user-attachments/assets/57a30438-c10d-4c85-adb2-caba8f77d67e" width="400" alt="RAG Pipeline showing generated responses"/>
+<br>
 
-![RAG Pipeline showing chunksdata used to generate responses](https://github.com/user-attachments/assets/537a0604-9406-4914-a1c2-d6c507292250)
+<img src="https://github.com/user-attachments/assets/537a0604-9406-4914-a1c2-d6c507292250" width="400" alt="RAG Pipeline showing chunksdata used to generate responses"/>
+<br>
 
-![RAG Pipeline showing uploaded docs used to create response](https://github.com/user-attachments/assets/57d6f539-c3f1-4ad6-a656-91b9f8d61e25)
+<img src="https://github.com/user-attachments/assets/57d6f539-c3f1-4ad6-a656-91b9f8d61e25" width="400" alt="RAG Pipeline showing uploaded docs used to create response"/>
 
 
 
