@@ -9,10 +9,9 @@ This repository contains a Document RAG (Retrieval-Augmented Generation) Pipelin
 <img src="https://github.com/user-attachments/assets/57a30438-c10d-4c85-adb2-caba8f77d67e" width="400" alt="RAG Pipeline showing generated responses"/>
 
 
-<img src="https://github.com/user-attachments/assets/537a0604-9406-4914-a1c2-d6c507292250" width="400" alt="RAG Pipeline showing chunksdata used to generate responses"/>
+<img src="https://github.com/user-attachments/assets/537a0604-9406-4914-a1c2-d6c507292250" width="400" alt="RAG Pipeline showing chunksdata used to generate responses"/><img src="https://github.com/user-attachments/assets/57d6f539-c3f1-4ad6-a656-91b9f8d61e25" width="400" alt="RAG Pipeline showing uploaded docs used to create response"/>
 
 
-<img src="https://github.com/user-attachments/assets/57d6f539-c3f1-4ad6-a656-91b9f8d61e25" width="400" alt="RAG Pipeline showing uploaded docs used to create response"/>
 
 
 
