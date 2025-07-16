@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM python:3.11-slim
+FROM python:3.12.1
 
 # Install system dependencies
 COPY system-packages.txt /tmp/system-packages.txt
