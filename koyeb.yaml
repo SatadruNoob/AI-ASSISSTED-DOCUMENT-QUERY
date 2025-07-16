@@ -1,0 +1,3 @@
+services:
+  - name: document-query-app
+    dockerfile: Dockerfile  # Explicitly point to your Dockerfile
