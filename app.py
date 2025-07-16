@@ -15,6 +15,21 @@ from ocr_utils import ocr_and_update_chroma
 from vector_store_utils import update_vector_store, sanitize_collection_name
 import db_manager
 
+
+# === ADD SECRET VALIDATION HERE ===
+# Validate required environment variables
+required_vars = [
+    "HUGGINGFACEHUB_API_TOKEN",
+    "LANGSMITH_API_KEY",
+    "MISTRAL_API_KEY"
+]
+
+missing_vars = [var for var in required_vars if var not in os.environ]
+if missing_vars:
+    st.error(f"Missing required environment variables: {', '.join(missing_vars)}")
+    st.stop()  # This will halt the app if variables are missing
+
+
 # Set page configuration
 st.set_page_config(
     page_title="Document RAG Pipeline",
@@ -72,11 +87,12 @@ except Exception as e:
     st.session_state.pipeline = None
     print(f"DEBUG: Could not initialize from existing data: {str(e)}")
 
+
 # Set environment variables for API keys - In production, these should be fetched from secure storage
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.environ.get("HUGGINGFACEHUB_API_TOKEN", "TYPE_YOUR_TOKEN_NUMBER")
-os.environ["LANGSMITH_TRACING"] = os.environ.get("LANGSMITH_TRACING", "true")
-os.environ["LANGSMITH_API_KEY"] = os.environ.get("LANGSMITH_API_KEY", "TYPE_YOUR_TOKEN_NUMBER")
-os.environ["MISTRAL_API_KEY"] = os.environ.get("MISTRAL_API_KEY", "TYPE_YOUR_TOKEN_NUMBER")
+# os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.environ.get("HUGGINGFACEHUB_API_TOKEN", "TYPE_YOUR_TOKEN_NUMBER")
+# os.environ["LANGSMITH_TRACING"] = os.environ.get("LANGSMITH_TRACING", "true")
+# os.environ["LANGSMITH_API_KEY"] = os.environ.get("LANGSMITH_API_KEY", "TYPE_YOUR_TOKEN_NUMBER")
+# os.environ["MISTRAL_API_KEY"] = os.environ.get("MISTRAL_API_KEY", "TYPE_YOUR_TOKEN_NUMBER")
 
 # Title and description
 st.title("🔍 Document RAG Pipeline with Mistral AI")
