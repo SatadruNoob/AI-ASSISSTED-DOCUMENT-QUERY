@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
-FROM python:3.12.1-slim  # Smaller base image
+ARG _DEV_CONTAINERS_BASE_IMAGE=placeholder
+FROM python:3.12.1-slim AS dev_container_auto_added_stage_label
 
 # Install system dependencies
 COPY system-packages.txt /tmp/system-packages.txt
